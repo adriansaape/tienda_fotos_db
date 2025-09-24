@@ -1,4 +1,4 @@
-# 📸 PHP INTEGRACIÓN – Tienda de Fotos
+# 📸 PHP + React INTEGRACIÓN – Tienda de Fotos
 
 ## 📘 Proyecto: Tienda de Fotos en Línea <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="24px">
 
@@ -6,14 +6,14 @@
 
 El proyecto **Tienda de Fotos** es un sistema web que permite a los usuarios **registrarse, iniciar sesión, comprar productos fotográficos (con o sin registro)**, gestionar pedidos y recibir notificaciones.  
 
-Está desarrollado en **PHP** con conexión a **MySQL**, implementando **React** y gestionado bajo la metodología ágil **Scrum** usando **Trello** para organización y **GitHub** para control de versiones.  
+Está desarrollado con **PHP + MySQL** en el backend y **React** en el frontend, gestionado bajo la metodología ágil **Scrum**, usando **Trello** para organización y **GitHub** para control de versiones.  
 
 ---
 
 ### 🎯 Objetivo del Proyecto
 Construir una plataforma funcional que permita:
 - Registro y login de usuarios.
-- Visualización de productos en una interfaz amigable (no en formato JSON).
+- Visualización de productos en una interfaz dinámica desarrollada en **React**.
 - Creación de pedidos con dos modalidades:
   - **Con registro** (usuario logueado).
   - **Sin registro** (compra directa).
@@ -23,19 +23,19 @@ Construir una plataforma funcional que permita:
 ---
 
 ### 👨‍💻 ¿QUÉ SE LOGRÓ?
-✔ Conexión a base de datos y creación de todas las tablas necesarias (usuarios, productos, pedidos, notificaciones, formularios).  
-✔ Desarrollo de **plugins en PHP** para: registrar usuarios, login, listar productos, crear pedidos y enviar notificaciones.  
+✔ Conexión a base de datos y creación de todas las tablas necesarias (usuarios, productos, pedidos, notificaciones).  
+✔ Desarrollo de endpoints en **PHP** para registro de usuarios, login, listado de productos, creación de pedidos y envío de notificaciones.  
 ✔ Corrección de errores de claves foráneas y estructura de BD.  
 ✔ Implementación de opción de compra **con y sin registro**.  
-✔ Interfaz más organizada con HTML y menús de navegación.  
-✔ Sprint 1 completado en Trello: repositorio, conexión a BD, registro de usuarios, listar productos.  
+✔ Interfaz de usuario en **React**, con componentes para cada módulo (login, registro, productos, pedidos).  
+✔ Sprint 1 completado en Trello: repositorio, conexión a BD, registro de usuarios, listado de productos.  
 
 ---
 
 <p align="right"> <h3>🛠 TECNOLOGÍAS UTILIZADAS:</h3> </p>
 
-- 🌱 Lenguaje Backend: **PHP**
-- 📫 Lenguaje Frontend: **HTML5, CSS3**
+- 🌱 Backend: **PHP**
+- 📫 Frontend: **React (JSX, Hooks, Fetch API)**
 - ⚡ Base de Datos: **MySQL**
 - 🎚️ Control de Versiones: **Git & GitHub**
 - 👌 Gestión del Proyecto: **Scrum con Trello**
@@ -46,9 +46,9 @@ Construir una plataforma funcional que permita:
 
 ✔ Product Owner (PO): Define objetivos y prioridades.😉 <br>
 ✔ Scrum Master (SM): Facilita el proceso y da seguimiento en Trello.<br>
-✔ Frontend Developer: Diseña la interfaz y formularios.<br>
+✔ Frontend Developer: Implementa la interfaz en **React**.<br>
 ✔ Backend Developer: Lógica PHP y conexión MySQL.<br>
-✔ QA/Tester: Prueba de plugins y flujo de pedidos.<br>
+✔ QA/Tester: Pruebas de flujo de pedidos y validaciones.<br>
 ✔ Documentador: Redacción de HU, checklist y README.<br>
 
 ---
@@ -56,10 +56,23 @@ Construir una plataforma funcional que permita:
 # 📂 Estructura del Proyecto
 ```bash
 📦 tienda_fotos
- ┣ 📂 plugins
+ ┣ 📂 backend
+ ┃ ┣ conexion.php
  ┃ ┣ usuario_registro.php
  ┃ ┣ usuario_login.php
- ┃ ┣ producto_registrar.php
  ┃ ┣ producto_listar.php
  ┃ ┣ pedido_crear.php
  ┃ ┣ notificacion_enviar.php
+ ┃ ┗ tienda_fotos_db.sql
+ ┣ 📂 frontend
+ ┃ ┣ 📂 src
+ ┃ ┃ ┣ 📂 components
+ ┃ ┃ ┃ ┣ Login.jsx
+ ┃ ┃ ┃ ┣ Registro.jsx
+ ┃ ┃ ┃ ┣ Productos.jsx
+ ┃ ┃ ┃ ┣ Pedidos.jsx
+ ┃ ┃ ┃ ┗ Notificaciones.jsx
+ ┃ ┃ ┣ App.jsx
+ ┃ ┃ ┗ index.js
+ ┃ ┗ package.json
+ ┣ README.md
