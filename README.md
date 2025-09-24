@@ -6,7 +6,7 @@
 
 El proyecto **Tienda de Fotos** es un sistema web que permite a los usuarios **registrarse, iniciar sesión, comprar productos fotográficos (con o sin registro)**, gestionar pedidos y recibir notificaciones.  
 
-Está desarrollado en **PHP** con conexión a **MySQL**, implementando estilos en **HTML + CSS** y gestionado bajo la metodología ágil **Scrum** usando **Trello** para organización y **GitHub** para control de versiones.  
+Está desarrollado en **PHP** con conexión a **MySQL**, implementando **React** y gestionado bajo la metodología ágil **Scrum** usando **Trello** para organización y **GitHub** para control de versiones.  
 
 ---
 
